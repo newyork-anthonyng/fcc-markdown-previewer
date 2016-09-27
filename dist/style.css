@@ -1,0 +1,11 @@
+textarea {
+	float: left;
+	font-size: 16px;
+	height: 300px;
+	width: 300px;
+}
+
+#markdown {
+	float: left;
+	margin-left: 21px;
+}
