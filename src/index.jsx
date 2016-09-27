@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom';
 import { TextArea } from './components/TextArea';
 
 const App = React.createClass({
+	handleTextChange: function(value) {
+	},
+
 	render: function() {
 		return (
-			<TextArea />
+			<TextArea
+				onTextChange={this.handleTextChange}
+			/>
 		);
 	}
 });
