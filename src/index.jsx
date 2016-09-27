@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { TextArea } from './components/TextArea';
 
 const App = React.createClass({
 	render: function() {
 		return (
-			<h1>Hello World</h1>
+			<TextArea />
 		);
 	}
 });
