@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { TextArea } from './components/TextArea';
 import { Markdown } from './components/Markdown';
+import marked from 'marked';
 
 const App = React.createClass({
 	getInitialState: function() {
@@ -10,7 +11,7 @@ const App = React.createClass({
 
 	handleTextChange: function(value) {
 		this.setState({
-			text: value
+			text: marked(value)
 		});
 	},
 
